@@ -80,6 +80,13 @@ end
 ```
 For more info on CORS, check: https://medium.com/ruby-daily/understanding-cors-when-using-ruby-on-rails-as-an-api-f086dc6ffc41
 
+### Deploy the API
+With these commands, the API will be deployed to Heroku and a new host will be granted: "https://shielded-garden-61293.herokuapp.com/" 
+```bash
+$ heroku create
+$ git push heroku main
+```
+
 
 
 
