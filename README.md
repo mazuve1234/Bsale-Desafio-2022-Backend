@@ -1,5 +1,7 @@
 # Bsale-Desafio-2022-Backend
 
+##  Ruby on Rails - MySQL
+
 ### Install MySQL
 First, the user has to install the MySQL client with these commands.
 ```bash
