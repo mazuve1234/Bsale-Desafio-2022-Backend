@@ -29,6 +29,12 @@ Go to `config/database.yml` to fill in with the credentials given (username, pas
   development:
     <<: *default
     database: bsale_test
+   
+   production:
+    <<: *default
+    database: bsale_test
+    username: [username]
+    password: [password]
 ```
 
 ### Configure the table names
