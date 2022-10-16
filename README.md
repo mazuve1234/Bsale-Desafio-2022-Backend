@@ -53,6 +53,12 @@ class ProductController < ApplicationController
 end
 ```
 
+### Start the server
+Type the following to open up the puma server with the base_uri: "http://127.0.0.1:3000". 
+```bash
+$ rails s
+```
+
 ### Fix the CORS issue
 Browsers usually block cross-origin requests so certain steps are required to bypass it.
 First, install the required Gemfile.
