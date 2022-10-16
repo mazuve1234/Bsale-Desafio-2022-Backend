@@ -4,6 +4,4 @@ class CategoryController < ApplicationController
     render json: @categories
   end
 
-  def show
-  end
 end

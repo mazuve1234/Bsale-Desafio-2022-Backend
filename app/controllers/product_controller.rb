@@ -4,6 +4,4 @@ class ProductController < ApplicationController
     render json: @products
   end
 
-  def show
-  end
 end
