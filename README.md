@@ -1,5 +1,7 @@
 # Bsale-Desafio-2022-Backend
 
+##  Ruby on Rails - MySQL
+
 ### Install MySQL
 First, the user has to install the MySQL client with these commands.
 ```bash
@@ -27,6 +29,12 @@ Go to `config/database.yml` to fill in with the credentials given (username, pas
   development:
     <<: *default
     database: bsale_test
+   
+   production:
+    <<: *default
+    database: bsale_test
+    username: [username]
+    password: [password]
 ```
 
 ### Configure the table names
@@ -77,6 +85,13 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 end
 ```
 For more info on CORS, check: https://medium.com/ruby-daily/understanding-cors-when-using-ruby-on-rails-as-an-api-f086dc6ffc41
+
+### Deploy the API
+With these commands, the API will be deployed to Heroku and a new host will be granted: "https://shielded-garden-61293.herokuapp.com/" 
+```bash
+$ heroku create
+$ git push heroku main
+```
 
 
 
