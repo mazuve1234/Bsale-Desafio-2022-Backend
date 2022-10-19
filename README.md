@@ -42,6 +42,13 @@ Since the table names are in singular, you need to insert this command in `confi
 ```bash
   ActiveRecord::Base.pluralize_table_names = false
 ```
+### Generate the models
+Only the models will be generated but the migrations won't be executed. The purpose of this is to create the models for the two tables so the data can be fetched later.
+```bash
+  $ rails g model Product name url_image price:float discount:integer
+  $ rails g model Category name
+```
+
 
 ### Generate the controllers
 For this exercise, only the index route will be necessary, being able to GET all the data required from the "product" and "category" tables.
