@@ -9,4 +9,3 @@
 #   f.fullscreen  :self
 #   f.payment     :self, "https://secure.example.com"
 # end
-
