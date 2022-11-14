@@ -1,6 +1,6 @@
 # Bsale-Desafio-2022-Backend
 
-##  Ruby on Rails - MySQL
+Esta aplicación fue diseñada utilizando el framework Ruby on Rails y la base de datos MySQL. Sirve como un API que brinda el método de petición HTTP GET del contenido de su base de datos para ser extraída en la visualización de una página web.
 
 ### Instalar MySQ
 Primero, el usuario tiene que instalar el cliente MySQL con estos comandos.
