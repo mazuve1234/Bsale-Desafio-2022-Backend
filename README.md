@@ -59,8 +59,8 @@ Para este ejercicio solo será necesaria la rutas "search" para los productos e 
 
 ### Renderizar los datos a JSON
 En los métodos de ambos controladores, inserte este código para representar en JSON los datos para el Front-end.
-.Product.all: Muestra todo los elementos presentes en la base de datos.
-.Product.where('lower(name) LIKE ?'): Muestra los elementos presentes en la base de datos que cumplan con la condición del nombre del producto por medio del patrón envíado como parametro en la URL.
+#### Product.all: Muestra todo los elementos presentes en la base de datos.
+#### Product.where('lower(name) LIKE ?'): Muestra los elementos presentes en la base de datos que cumplan con la condición del nombre del producto por medio del patrón envíado como parametro en la URL.
 ```bash
 class ProductController < ApplicationController
   # Funcionalidad de search implementada en el servidor para obtener solo los productos deseados
