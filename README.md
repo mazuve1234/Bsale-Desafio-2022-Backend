@@ -59,6 +59,8 @@ Para este ejercicio solo será necesaria la rutas "search" para los productos e 
 
 ### Renderizar los datos a JSON
 En los métodos de ambos controladores, inserte este código para representar en JSON los datos para el Front-end.
+.Product.all: Muestra todo los elementos presentes en la base de datos.
+.Product.where('lower(name) LIKE ?'): Muestra los elementos presentes en la base de datos que cumplan con la condición del nombre del producto por medio del patrón envíado como parametro en la URL.
 ```bash
 class ProductController < ApplicationController
   # Funcionalidad de search implementada en el servidor para obtener solo los productos deseados
@@ -100,11 +102,12 @@ $ rails s
 ```
 
 ### Solucionar el problema de CORS
-Los navegadores generalmente bloquean las solicitudes de origen cruzado, por lo que se requieren ciertos pasos para evitarlo.First, install the required Gemfile.
+Los navegadores generalmente bloquean las solicitudes de origen cruzado, por lo que se requieren ciertos pasos para evitarlo.
+Primero, instale el Gemfile requerido.
 ```bash
 gem 'rack-cors'
 ```
-Then, go to `config/initializers/cors.rb` and insert this code.
+Luego, vaya a `config/initializers/cors.rb` e inserte este código.
 ```bash
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
